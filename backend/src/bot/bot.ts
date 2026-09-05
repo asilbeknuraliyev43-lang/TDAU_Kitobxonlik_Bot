@@ -11,6 +11,10 @@ const BANNER_IMAGE_PATH = path.resolve(__dirname, '../../uploads/tdau_banner.jpg
 
 export const bot = new Telegraf(config.botToken);
 
+bot.catch((err: any, ctx: any) => {
+  console.error(`Telegraf error in update [${ctx?.updateType}]:`, err);
+});
+
 function escapeHtml(str: string = ''): string {
   return str
     .replace(/&/g, '&amp;')
