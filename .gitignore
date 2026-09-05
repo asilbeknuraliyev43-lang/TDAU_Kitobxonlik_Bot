@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+Thumbs.db
+cloudflared.exe
+cloudflared.log
+backend/kitobxon.db
+backend/dist/
+frontend/dist/
+scratch/
