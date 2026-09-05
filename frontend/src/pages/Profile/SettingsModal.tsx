@@ -101,7 +101,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
             <input
               type="checkbox"
               checked={hapticsEnabled}
-              onChange={(e) => setHapticsEnabled(e.target.checked)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setHapticsEnabled(e.target.checked)}
               className="w-4 h-4 accent-amber-500 rounded"
             />
           </div>
