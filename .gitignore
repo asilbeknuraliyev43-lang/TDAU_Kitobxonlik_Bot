@@ -6,6 +6,7 @@ build/
 Thumbs.db
 cloudflared.exe
 cloudflared.log
+*.db
 backend/kitobxon.db
 backend/dist/
 frontend/dist/

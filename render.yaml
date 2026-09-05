@@ -1,0 +1,17 @@
+﻿services:
+  - type: web
+    name: tdau-kitobxonlik-bot
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BOT_TOKEN
+        value: 8897934466:AAHzslRCRQZJxzvdFXrCKAOPsC0XMVILUwQ
+      - key: ADMIN_TELEGRAM_IDS
+        value: 185791049,5435079143,8420258761
+      - key: DATABASE_PATH
+        value: ./kitobxon.db
